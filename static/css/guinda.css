@@ -151,3 +151,9 @@ button { touch-action: manipulation; }
 .texto-gradiente { background: none; color: #681b38; -webkit-text-fill-color: #681b38; }
 
 #panel-totales-municipio { animation: none; opacity: 1; }
+
+/* Personal identity on the login screen, without changing the dashboard. */
+.login-identity { margin: 4px 0 14px; }
+.login-person-name { margin: 0; color: #681b38; font-family: var(--font); font-size: clamp(20px, 4.8vw, 26px); font-weight: 800; letter-spacing: -.7px; line-height: 1.25; text-wrap: balance; overflow-wrap: break-word; }
+.login-identity-rule { display: block; width: 34px; height: 2px; margin: 13px auto 0; background: #681b38; border-radius: 1px; }
+.login-identity + .login-title { font-size: 16px; font-weight: 700; letter-spacing: -.25px; }
