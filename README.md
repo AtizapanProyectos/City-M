@@ -12,7 +12,7 @@ La rama local preparada es main. Falta conectar el repositorio nuevo que compart
 
 ## Diseño
 
-Guinda principal #681b38; acento #8d284c; neutros cálidos y dorado tenue. Los partidos y el sentimiento mantienen sus colores semánticos. Las cuatro pestañas táctiles están disponibles hasta 1200 px y la leyenda del mapa se puede desplegar. La interfaz no incluye emojis; se utilizan iconos SVG accesibles.
+Guinda principal #681b38; acento #8d284c; neutros cálidos y acentos rosados. Encabezados y controles usan fondos guinda sólidos, sin mezclas con verde. Los partidos y el sentimiento mantienen sus colores semánticos. Las cuatro pestañas táctiles están disponibles hasta 1200 px y la leyenda del mapa se puede desplegar. La interfaz no incluye emojis; se utilizan iconos SVG accesibles.
 
 ## Verificar
 

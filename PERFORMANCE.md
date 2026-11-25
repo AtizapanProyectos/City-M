@@ -43,3 +43,5 @@ Comandos: python manage.py test maps elections territory; python -m unittest dis
 La migración 0006 solo crea índices y se ejecuta con migrate en el Procfile. Conservar una réplica y un volumen exclusivo /data. Los respaldos locales están excluidos de Git. SECRET_KEY y el mecanismo de administrador no cambian.
 
 check --deploy mantiene las advertencias ya documentadas sobre HSTS para subdominios y preload. Las pruebas locales no sustituyen la observación de CPU, memoria y latencia en Railway ni una prueba en un dispositivo físico con Safari. Gunicorn no se ejecutó localmente porque el equipo no dispone de un entorno Linux utilizable sin Docker.
+
+Corrección visual: los encabezados y controles de City-M usan guinda sólido, sin degradados mezclados con verde. Los colores de los partidos, las gráficas y sus datos se mantienen como en la versión original. No se modifican cálculos ni registros.

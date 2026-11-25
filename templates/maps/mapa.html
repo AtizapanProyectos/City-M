@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}" />
     <link href="{% static 'vendor/montserrat/montserrat.css' %}" rel="stylesheet">
     <script defer src="{% static 'vendor/chartjs/chart.umd.min.js' %}"></script>
-    <link rel="stylesheet" href="{% static 'css/mapa.css' %}?v=guinda-1">
-    <link rel="stylesheet" href="{% static 'css/guinda.css' %}?v=1">
+    <link rel="stylesheet" href="{% static 'css/mapa.css' %}?v=guinda-2">
+    <link rel="stylesheet" href="{% static 'css/guinda.css' %}?v=2">
 </head>
 <body>
 
@@ -86,7 +86,7 @@
                                 <span id="ui-cand2-pct">-</span>
                             </div>
                             <div class="chip-candidato">
-                                <span class="chip-dot" id="dot-cand3" style="background: #B3282D;"></span>
+                                <span class="chip-dot" id="dot-cand3" style="background: #b05a7d;"></span>
                                 <span id="ui-cand3-name-comp">Cand 3</span>
                                 <span id="ui-cand3-val">-</span>
                                 <span id="ui-cand3-pct">-</span>
@@ -254,16 +254,16 @@
                 <button type="button" id="btn-limpiar-filtro-mapa" style="display: none; background: none; border: none; color: var(--c-magenta); font-size: 10px; font-weight: 800; cursor: pointer; text-decoration: underline; padding: 0;">Limpiar</button>
             </div>
             <div class="leyenda-item" data-opacidad="0.95" title="Click para filtrar">
-                <div class="color-box" style="background: linear-gradient(to right, #0055A6 50%, #B3282D 50%); opacity: 0.95;"></div> 75% a 100% (Súper intenso)
+                <div class="color-box" style="background: linear-gradient(to right, #3d1024 50%, #b05a7d 50%); opacity: 0.95;"></div> 75% a 100% (Súper intenso)
             </div>
             <div class="leyenda-item" data-opacidad="0.75" title="Click para filtrar">
-                <div class="color-box" style="background: linear-gradient(to right, #0055A6 50%, #B3282D 50%); opacity: 0.75;"></div> 50% a 75% (Muy intenso)
+                <div class="color-box" style="background: linear-gradient(to right, #3d1024 50%, #b05a7d 50%); opacity: 0.75;"></div> 50% a 75% (Muy intenso)
             </div>
             <div class="leyenda-item" data-opacidad="0.55" title="Click para filtrar">
-                <div class="color-box" style="background: linear-gradient(to right, #0055A6 50%, #B3282D 50%); opacity: 0.55;"></div> 25% a 50% (Intenso)
+                <div class="color-box" style="background: linear-gradient(to right, #3d1024 50%, #b05a7d 50%); opacity: 0.55;"></div> 25% a 50% (Intenso)
             </div>
             <div class="leyenda-item" data-opacidad="0.35" title="Click para filtrar">
-                <div class="color-box" style="background: linear-gradient(to right, #0055A6 50%, #B3282D 50%); opacity: 0.35;"></div> 10% a 25% (Tenue)
+                <div class="color-box" style="background: linear-gradient(to right, #3d1024 50%, #b05a7d 50%); opacity: 0.35;"></div> 10% a 25% (Tenue)
             </div>
         </div>
 
@@ -403,7 +403,7 @@
                                 <th style="color: #F37021;">MC</th>
                                 <th style="color: #B3282D;">MORENA</th>
                                 <th style="color: #14B5B4;">NAEM</th>
-                                <th style="color: #a7b4c9;">IND</th>
+                                <th style="color: #b9a4ae;">IND</th>
                                 <th>Acción</th>
                             </tr>
                         </thead>
@@ -441,7 +441,7 @@
     </div>
 
     <script defer src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
-    <script defer src="{% static 'js/dashboard.js' %}?v=guinda-1"></script>
-    <script defer src="{% static 'js/mapa.js' %}?v=guinda-1"></script>
+    <script defer src="{% static 'js/dashboard.js' %}?v=guinda-2"></script>
+    <script defer src="{% static 'js/mapa.js' %}?v=guinda-2"></script>
 </body>
 </html>

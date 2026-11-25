@@ -1,10 +1,10 @@
-/* Visual identity shared by the login and dashboard. Electoral data keeps its party colors. */
+/* Visual identity shared by the login and dashboard. Interface accents use solid burgundy; electoral parties retain their original data colors. */
 :root {
     --brand: #681b38;
     --brand-dark: #451226;
     --brand-mid: #8d284c;
     --brand-light: #f6eaf0;
-    --brand-gold: #b18b59;
+    --brand-gold: #b65f80;
     --pan-navy: var(--brand);
     --pan-navy-2: var(--brand-dark);
     --pan-blue: var(--brand-mid);
@@ -22,7 +22,7 @@
 html { scroll-padding-bottom: 96px; }
 button, a, input, select { -webkit-tap-highlight-color: transparent; }
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
-    outline: 3px solid #b18b59; outline-offset: 3px;
+    outline: 3px solid #b65f80; outline-offset: 3px;
 }
 button { touch-action: manipulation; }
 .cuadrante { border-top: 3px solid var(--brand); box-shadow: var(--shadow-card); animation: none; }
@@ -135,3 +135,19 @@ button { touch-action: manipulation; }
     .mobile-dashboard .leaflet-left { left: auto; right: 10px; }
     .mobile-dashboard #leyenda-mapa { width: min(240px, calc(100% - 70px)); }
 }
+
+/* Keep third-party map tiles neutral beneath the burgundy electoral layers. */
+#mapa-atizapan .leaflet-tile-pane { filter: grayscale(1); }
+.leaflet-container a { color: var(--brand); }
+.leaflet-attribution-flag { filter: grayscale(1); }
+
+/* Solid chrome: never blend the application header or actions with party colors. */
+.sidebar-brand { background: #681b38 !important; background-image: none !important; opacity: 1; box-shadow: none; }
+.sidebar-brand .brand-eyebrow { color: #f6eaf0; }
+.sidebar-brand .sidebar-titulo, .sidebar-brand .sidebar-subtitulo { color: #fff; }
+.sidebar-brand .marca-dot { background: #fff; box-shadow: none; }
+.btn-proyeccion, .btn-gestion-encuestas { background: #681b38 !important; background-image: none !important; box-shadow: none; }
+.btn-proyeccion:hover:not(:disabled), .btn-gestion-encuestas:hover:not(:disabled) { background: #451226 !important; }
+.texto-gradiente { background: none; color: #681b38; -webkit-text-fill-color: #681b38; }
+
+#panel-totales-municipio { animation: none; opacity: 1; }
